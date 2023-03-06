@@ -1,3 +1,4 @@
+//*!section 3  start
 //selecting all required elements
 const filterItem = document.querySelector(".items");
 const filterImg = document.querySelectorAll(".gallery .image");
@@ -29,24 +30,91 @@ window.onload = ()=>{ //after window loaded
 
 //fullscreen image preview function
 //selecting all required elements
-const previewBox = document.querySelector(".preview-box"),
-categoryName = previewBox.querySelector(".title p"),
-previewImg = previewBox.querySelector("img"),
-closeIcon = previewBox.querySelector(".icon"),
-shadow = document.querySelector(".shadow");
+// const previewBox = document.querySelector(".preview-box"),
+// categoryName = previewBox.querySelector(".title p"),
+// previewImg = previewBox.querySelector("img"),
+// closeIcon = previewBox.querySelector(".icon"),
+// shadow = document.querySelector(".shadow");
 
-function preview(element){
-  //once user click on any image then remove the scroll bar of the body, so user cant scroll up or down
-  document.querySelector("body").style.overflow = "hidden";
-  let selectedPrevImg = element.querySelector("img").src; //getting user clicked image source link and stored in a variable
-  let selectedImgCategory = element.getAttribute("data-name"); //getting user clicked image data-name value
-  previewImg.src = selectedPrevImg; //passing the user clicked image source in preview image source
-  categoryName.textContent = selectedImgCategory; //passing user clicked data-name value in category name
-  previewBox.classList.add("show"); //show the preview image box
-  shadow.classList.add("show"); //show the light grey background
-  closeIcon.onclick = ()=>{ //if user click on close icon of preview box
-    previewBox.classList.remove("show"); //hide the preview box
-    shadow.classList.remove("show"); //hide the light grey background
-    document.querySelector("body").style.overflow = "auto"; //show the scroll bar on body
-  }
-}
+// function preview(element){
+//   //once user click on any image then remove the scroll bar of the body, so user cant scroll up or down
+//   document.querySelector("body").style.overflow = "hidden";
+//   let selectedPrevImg = element.querySelector("img").src; //getting user clicked image source link and stored in a variable
+//   let selectedImgCategory = element.getAttribute("data-name"); //getting user clicked image data-name value
+//   previewImg.src = selectedPrevImg; //passing the user clicked image source in preview image source
+//   // categoryName.textContent = selectedImgCategory; //passing user clicked data-name value in category name
+//   previewBox.classList.add("show"); //show the preview image box
+//   shadow.classList.add("show"); //show the light grey background
+//   closeIcon.onclick = ()=>{ //if user click on close icon of preview box
+//     previewBox.classList.remove("show"); //hide the preview box
+//     shadow.classList.remove("show"); //hide the light grey background
+//     document.querySelector("body").style.overflow = "auto"; //show the scroll bar on body
+//   }
+// }
+
+
+//*! section 3 end
+
+// *! runing number section 5
+
+
+ 
+ 
+
+    function runCounter(targetId, maxCount) {
+      var counter = document.getElementById(targetId);
+      var count = 0;
+  
+      function updateCounter() {
+        count++;
+        counter.textContent = count;
+  
+        if (count < maxCount) {
+          requestAnimationFrame(updateCounter);
+        }
+      }
+  
+      requestAnimationFrame(updateCounter);
+    }
+  
+    runCounter("counter", 500);
+    runCounter("countertwo", 300);
+    runCounter("counterThree", 60);
+    var scrollTimeout;
+  
+    window.addEventListener("scroll", function() {
+      // If there is an existing scroll timeout, clear it
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+  
+      // Set a new scroll timeout
+      scrollTimeout = setTimeout(function() {
+        // Update the counter after the scroll timeout
+        requestAnimationFrame(function() {
+          runCounter("counter", 500);
+          runCounter("counterTwo", 300);
+          runCounter("counterThree", 60);
+        });
+      }, 100);
+    });
+  
+  // *! timer end 
+
+  //*! card start
+
+  var toggleButton = document.getElementById("toggle");
+  var cards = document.querySelectorAll(".card");
+  var containerOne = document.querySelector(".card-container-one");
+
+  toggleButton.addEventListener("click", function() {
+    // Loop through each card and set display to "none" for the first three
+    for (var i = 0; i < 3; i++) {
+      cards[i].style.display = cards[i].style.display === "none" ? "block" : "none";
+    }
+
+    // Toggle the second card container
+    containerOne.style.display = containerOne.style.display === "block" ? "none" : "block";
+  });
+
+

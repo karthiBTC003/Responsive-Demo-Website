@@ -401,22 +401,36 @@ font-size: 1.5rem;
 /* *!my hover editing */
 
 .karthi{
-    opacity: 1;
-    /* left: 9rem;
-    top: -12rem;
-    font-size: 3rem; */
+  opacity: 0;
+  font-size: 1rem;
+  margin-top: -12rem;
+  margin-bottom: 9rem;
+  margin-left: 8rem;
+  font-weight: bold;
+  color:#310794;
 }
+.karthi:hover{
+  opacity: 1;
+}
+.karthi-1{
+  opacity: 0;
+  font-size: 1rem;
+  margin-top: -12rem;
+  margin-bottom: 9rem;
+  margin-left: 10rem;
+  font-weight: bold;
+  color:#310794;
+}
+
+.gallery .image:hover .karthi-1{
+ 
+  opacity: 1 ;
+}
+
 .gallery .image:hover .karthi{
     opacity: 1;
+    
 }
-
-
-
-
-
-
-
-
 .gallery .image.hide{
   display: none;
 }
@@ -530,3 +544,232 @@ font-size: 1.5rem;
 }
 
 /*  ! section 3 end */
+
+/*  ! section 4 start */
+.SERVICES-box{
+  display: grid;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+
+.SERVICES{
+display: flex;
+justify-content: center;
+  color: blue;
+  margin-top: 3rem;
+}
+.choose-you{
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+/* .box-div{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.box-div .box{
+  width: calc(100% / 3);
+  padding: 7px;
+}
+
+.box-div .box div{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 3rem;
+} */
+
+/* *!card */
+.card-rows{
+  width: 96%;
+}
+
+.card-rows div{
+  flex: 1 0 0%;
+  /* border: 2px solid; */
+  margin-left: 5rem;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+.card-rows div span{
+  font-size: 3rem;
+  font-size: 3rem;
+  justify-content: center;
+  display: grid;
+  color: #310794;
+  margin-top: 3rem;
+  
+}
+.head{
+
+font-size: 2rem;
+    font-weight: bold;
+    color: blue;
+    justify-content: center;
+    display: grid;
+    margin-top: 2rem;
+}
+
+.lorem{
+  color: #8a8a8a;
+  padding: 22px;
+}
+
+.card-rows div:hover{
+  color: white;
+  background-color: #310794;
+  transition: 0.6s;
+}
+
+.card-rows div:hover span{
+  color: white;
+ 
+}
+.card-rows div:hover p{
+  color: white;
+ 
+}
+
+
+/*  ! section 4 end */
+/*  ! section 5 start */
+.box{
+  align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 10rem;
+    margin-left: 15rem;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    width: 65rem;
+    height: 15rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    border-radius: 2rem;
+    font-weight: bold;
+  color: #310794;
+}
+
+.box-footer{
+  width: 71%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    margin-left: 15rem;
+    margin-top: -9rem;
+    color: #8a8a8a;
+    margin-bottom: 3rem;
+ 
+}
+/*  ! section 5 end */
+
+/*  ! section 6 start */
+
+.card-container-one {
+  display: none;
+}
+
+
+/* *switch button staet */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 89rem;
+  margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin-left: -3rem;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c01b1b;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:#8a8a8a;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.mon{
+  margin-top: -7rem;
+  margin-left: 80rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color:#310794;
+  margin-bottom: 4rem;
+}
+/* *switch button end */
+
+.card-container{
+  display: flex;
+  margin-left: 12rem;
+  column-gap: 4rem;
+}
+
+.card{
+  width: 21rem;
+}
+
+.card div span{
+  display: block;
+  padding: 1rem;
+  margin-left: 3rem;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: -6px;}
+
+
+
+
+
+/*  ! section 6 end */
