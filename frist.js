@@ -1,3 +1,19 @@
+
+//*! nav-bar
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+     
+     document.getElementById("navbar").style.background = "#273c75";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+     document.getElementById("navbar").style.background = "none";
+  }
+}
+
 //*!section 3  start
 //selecting all required elements
 const filterItem = document.querySelector(".items");
@@ -116,5 +132,84 @@ window.onload = ()=>{ //after window loaded
     // Toggle the second card container
     containerOne.style.display = containerOne.style.display === "block" ? "none" : "block";
   });
+
+
+
+
+
+
+
+// *! carou
+
+
+
+  var slides = document.querySelectorAll('.slide');
+var currentIndex = 0;
+
+setInterval(function() {
+  // Hide the current slide
+  slides[currentIndex].classList.remove('active-slide');
+  
+  // Increment the index of the current slide
+  currentIndex++;
+  
+  // If the index is greater than the number of slides, reset to 0
+  if (currentIndex >= slides.length) {
+    currentIndex = 0;
+  }
+  
+  // Show the next slide
+  slides[currentIndex].classList.add('active-slide');
+}, 5000); // Change slide every 2 seconds
+
+
+
+
+
+
+
+//*!form
+
+// Get the form element and the input fields
+var myForm = document.getElementById("myForm");
+var nameInput = document.getElementById("name");
+var emailInput = document.getElementById("email");
+var messageInput = document.getElementById("message");
+
+
+
+
+
+//*!name
+nameInput.addEventListener("keydown", function(event) {
+  // Test if the pressed key is a letter
+  var regex = /^[a-zA-Z]+$/;
+  var key = event.key;
+  if (!regex.test(key)) {
+    event.preventDefault(); // prevent non-letter key from being entered
+  }
+});
+
+
+nameInput.addEventListener("blur", function() {
+ 
+});
+
+
+
+// Get the form element
+var myForm = document.getElementById("myForm");
+
+// Add event listener to form submit button
+myForm.addEventListener("submit", function(event) {
+  // Check if any required input fields are empty
+  // ...
+
+  // Show confirmation message before submitting form
+  var confirmation = confirm("Are you sure you want to submit the form?");
+  if (!confirmation) {
+    event.preventDefault(); // prevent form submission
+  }
+});
 
 

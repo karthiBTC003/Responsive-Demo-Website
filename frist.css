@@ -128,7 +128,7 @@ font-size: 1.4rem;
 /* *!section 2 start */
 
 .about-us-par-div{
-    margin-left: 35rem;
+    margin-left: 43rem;
     margin-top: 5rem;
 }
 .about-us{
@@ -670,6 +670,24 @@ font-size: 2rem;
 
 /*  ! section 6 start */
 
+.pricing-div{
+  display: grid;
+  /* align-items: center; */
+  justify-content: center;
+  /* margin-top: 2rem; */
+  padding: 22px;
+
+}
+.pricing{
+  color: rgba(0, 0, 255,0.7);
+}
+.your-plan{
+  font-size: 33px;
+  margin-left: -111px;
+  color: white;
+}
+
+
 .card-container-one {
   display: none;
 }
@@ -681,7 +699,7 @@ font-size: 2rem;
   display: inline-block;
   width: 60px;
   height: 34px;
-  margin-left: 89rem;
+  margin-left: 50rem;
   margin-bottom: 5rem;
     margin-top: 5rem;
 }
@@ -742,7 +760,7 @@ input:checked + .slider:before {
 
 .mon{
   margin-top: -7rem;
-  margin-left: 80rem;
+  margin-left: 40rem;
   font-size: 1.3rem;
   font-weight: bold;
   color:#310794;
@@ -758,18 +776,486 @@ input:checked + .slider:before {
 
 .card{
   width: 21rem;
+ 
 }
 
 .card div span{
   display: block;
   padding: 1rem;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
   font-size: 25px;
   font-weight: 500;
-  margin-top: -6px;}
+  /* margin-top: -6px; */
+}
+.basic{
+
+  color: maroon;
+  /* margin-left: 100px; */
+  margin-top: 6px;
+}
+.doller{
+  /* margin-left: 6.5rem; */
+  font-size: 2rem;
+  margin-top: -20px;
+  color: red;
+}
+
+.respon{
+  /* margin-left: 4rem; */
+    color: blueviolet;
+
+}
+.respons{
+  color: blueviolet;
+  /* margin-left: 2.5rem; */
+  margin-top: -25px;
+}
+.support{
+  /* margin-left: 4.4rem; */
+    margin-top: -23px;
+    color: darkgray;
+}
+
+.supports{
+  /* margin-left: 3.4rem; */
+    margin-top: -23px;
+    color: darkgray;
+}
+
+.car-2-support{
+  /* margin-left: 4.4rem; */
+    margin-top: -23px;
+    color: blueviolet;
+}
+
+.car-2-supports{
+  /* margin-left: 3.4rem; */
+    margin-top: -23px;
+    color: blueviolet;
+}
+
+.car-3-support{
+  /* margin-left: 4.4rem; */
+    margin-top: -23px;
+    color: blueviolet;
+}
+
+.car-3-supports{
+  /* margin-left: 3.4rem; */
+    margin-top: -23px;
+    color: blueviolet;
+}
+.card button {
+      color: firebrick;
+      /* margin-left: 5rem; */
+      /* margin-top: 2rem; */
+      top: -1rem;
+    left: 6rem;
+      font-size: 22px;
+      font-weight: 500;
+      border: none;
+      box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+      border-radius: 9px;
+      /* margin-bottom: 1rem; */
+      padding: 10px;
+}
+
+.card:hover button{
+  background:#e67e22;
+  color: white;
+}
+
+
+/* *! card 4,5,6   */
+
+.card-4-5{
+  display: flex;
+  margin-left: 12rem;
+  column-gap: 4rem;
+
+}
+.card-4{ 
+  width: 21rem;
+  margin-left: -13rem;
+  border-radius: 15px;
+  margin-bottom: 4rem;
+}
+
+.card-5{ 
+  width: 21rem;
+  /* margin-left: -13rem; */
+  border-radius: 15px;
+  margin-bottom: 4rem;
+}
+
+.card-6{ 
+  width: 21rem;
+  /* margin-left: -13rem; */
+  border-radius: 15px;
+  margin-bottom: 4rem;
+} 
+  
+
+   
+  
+
+.card-4-inside-div{
+  display: grid;
+  height: 30rem;
+  font-size: 24px;
+  border-radius: 15px;
+}
+
+.card-5-inside-div{
+  display: grid;
+  height: 30rem;
+  font-size: 24px;
+  border-radius: 15px;
+}
+
+.card-5 button {
+  color: firebrick;
+  /* margin-left: 5rem; */
+  /* margin-top: 2rem; */
+  top: 1rem;
+left: 6rem;
+  font-size: 22px;
+  font-weight: 500;
+  border: none;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  border-radius: 9px;
+  /* margin-bottom: 1rem; */
+  padding: 10px;
+}
+
+.card-5:hover button{
+background:#e67e22;
+color: white;
+}
+
+
+.card-4 button {
+  color: firebrick;
+  /* margin-left: 5rem; */
+  /* margin-top: 2rem; */
+  top: 1rem;
+left: 6rem;
+  font-size: 22px;
+  font-weight: 500;
+  border: none;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  border-radius: 9px;
+  /* margin-bottom: 1rem; */
+  padding: 10px;
+}
+
+.card-4:hover button{
+background:#e67e22;
+color: white;
+}
+
+.card-6 button {
+  color: firebrick;
+  /* margin-left: 5rem; */
+  /* margin-top: 2rem; */
+  top: 1rem;
+left: 6rem;
+  font-size: 22px;
+  font-weight: 500;
+  border: none;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  border-radius: 9px;
+  /* margin-bottom: 1rem; */
+  padding: 10px;
+}
+
+.card-6:hover button{
+background:#e67e22;
+color: white;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .card-5{
+  height: 30rem;
+  margin-left: 34rem;
+  margin-top: -32rem;
+    width: 23rem;
+    background-color: #d63031;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px ;
+    margin-bottom: 2rem;
+    border-radius:10px ;
+}
+
+.card-container-one{
+  /* border: 2px red solid; */
+  /* width: 71rem; */
+/* } */
+/* .card-6{
+  border: 2px solid;
+  height: 30rem;
+  width: 23rem;
+  margin-top: -30rem;
+ 
+  margin-left: 47rem;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+} */
+
+/* .card-4{
+  height: 30rem;
+  width: 350px;
+ border-radius:10px ;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  background-color: #d63031;
+  margin-bottom: 2rem;
+}
+
+.card-4-basic {
+  font-size: 3rem;
+    display: block;
+    margin-left: 6rem;
+    margin-top: 6px;
+color: #fbc531;
+}
+
+.card-4-doller{
+  font-size: 3rem;
+  margin-left: 8rem;
+  color: #273c75;
+  display: block;
+
+}
+
+.card-4-button{
+  margin-top: 3rem;
+  display: block;
+  margin-left: 7rem;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.card-4-respon{
+  display: block;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: antiquewhite;
+}
+.card-4-support{
+  display: block;
+  font-size: 2rem;
+  margin-left: 7rem;
+  margin-top: 1rem;
+  color: antiquewhite;
+}
+
+.card-4-supports{
+  display: block;
+    font-size: 2rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    color: antiquewhite;
+}  */
 
 
 /*  ! section 6 end */
+
+/*  ! section 7 start */
+.carousel {
+  width: 800px;
+  height: 29rem;
+  overflow: hidden;
+  margin-left: 23rem;
+ 
+  
+}
+
+.slide {
+  width: 800px;
+  height: 20rem;
+  display: none;
+  margin-top:5rem;
+  margin-bottom: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.active-slide {
+  display: block;
+}
+
+.cquote{
+ 
+  margin-left: 21rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.carousel-para{
+  color: #8a8a8a;
+  
+ 
+  padding: 1rem 6rem;
+
+
+  }
+ .Nabil{
+  margin-left: 19rem;
+  font-weight: bold;
+  font-size: 30px;
+ } 
+  
+   /*  ! section 7 end */
+    /*  ! section 8 start */
+.address{
+  font-size: 33px;
+    padding: 10px;
+}
+.king{
+  font-size: 21px;
+    padding: 10px;
+    color: #8a8a8a;
+}
+.phone{
+  font-size: 30px;
+    padding: 10px;
+}
+.numberr{
+  font-size: 21px;
+    padding: 10px;
+    color: #8a8a8a;
+}
+
+.sub{
+  margin-top: 3rem;
+  margin-left: 28rem;
+  
+  margin-bottom: 4rem;
+
+  border: none;
+  padding: 12px 25px;
+  font-size: 19px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+.sub:hover{
+  background-color: #fbc531;
+  color: white;
+}
+
+.text-box{
+  margin-top: 2rem;
+  margin-left: 8rem;
+  border: none;
+ background: #dcdde1;
+  width: 45rem;
+  height: 7rem;
+  border-radius: 10px;
+}
+
+#subject{
+  margin-left: 8rem;
+    margin-top: 2rem;
+    border: none;
+    background: #dcdde1;
+    width: 45rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+#email{
+  margin-left: 32rem;
+  margin-top: -46px;
+  display: block;
+  border: none;
+  background: #dcdde1;
+  width: 21rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+#name{
+  margin-top: 7rem;
+  margin-left: 8rem;
+  border: 0px;
+  background: #dcdde1;
+  width: 22rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+.text-box:focus{
+  outline:4px solid #273c75;
+}
+#name:focus{
+  outline:4px solid #273c75;
+}
+#email:focus{
+  outline:4px solid #273c75;
+}
+#subject:focus{
+  outline:4px solid #273c75;
+}
+.text-box:focus{
+  outline:4px solid #273c75;
+}
+  /*  ! section 8 end */ 
+
+  /* *!footer start */
+  .footer{
+    background-color: #310794;
+  }
+  
+  .foot-log{
+    margin-top: 49px;
+    color: white;
+    margin-bottom: 30px;
+    margin-left: 28px;
+}
+  
+
+  .fooot-para{
+    margin-left: 52px;
+    margin-top: 32px;}
+
+.about-div-foot{
+  display: grid;
+  row-gap: 23px;
+  color: white;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  font-size: 23px;
+}
+
+.card-3-fot-div{
+  color: white;
+  display: grid;
+  font-size: 26px;
+  row-gap: 18px;
+  margin-top: 75px;
+}
+
+.foot-socia{
+  color: white;
+    display: grid;
+    font-size: 29px;
+    row-gap: 15px;
+    margin-top: 69px;
+}
+
+  /* *!footer end */
