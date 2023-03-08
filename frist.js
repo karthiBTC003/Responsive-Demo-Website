@@ -1,5 +1,5 @@
 
-//*! nav-bar
+//*! nav-bar bg
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 window.onscroll = function() {scrollFunction()};
 
@@ -13,6 +13,69 @@ function scrollFunction() {
      document.getElementById("navbar").style.background = "none";
   }
 }
+
+
+
+// *!navbar servies
+// const navLinks = document.querySelectorAll('#navbar a');
+// const sections = {
+//   about: document.getElementById('about'),
+//   services: document.getElementById('services'),
+//   contact: document.getElementById('contact')
+// };
+
+// var aboutSection = document.getElementById("about");
+
+// // scroll to top of about section
+// aboutSection.scrollIntoView({ behavior: "smooth", block: "start" });
+
+// // scroll down 300 pixels from top of page
+// window.scrollBy({ top: 600, behavior: "smooth" });
+
+
+// JavaScript code to move the navbar to a sect
+
+// Get all navbar links
+const navbarLinks = document.querySelectorAll("#navbar a");
+
+// Loop through each link and add event listener
+navbarLinks.forEach(link => {
+  link.addEventListener("click", function(event) {
+    // Prevent default link behavior
+    event.preventDefault();
+    
+    // Get section ID from link href
+    const sectionId = link.getAttribute("href");
+    
+    // Scroll to section
+    document.querySelector(sectionId).scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+
+
+
+
+
+// Get the element you want to scroll to
+// const contactSection = document.getElementById('contact');
+
+// // Listen for the scroll event on the window object
+// window.addEventListener('scroll', () => {
+//   // Check the current scroll position of the page
+//   const scrollPosition = window.scrollY;
+
+//   // If the scroll position is greater than or equal to the top position of the contact section
+//   if (scrollPosition >= contactSection.offsetTop) {
+//     // Scroll to the contact section using the scrollTo() method
+//     window.scrollTo({
+//       top: contactSection.offsetTop,
+//       behavior: 'smooth'
+//     });
+//   }
+// });
+
+
 
 //*!section 3  start
 //selecting all required elements
@@ -74,64 +137,129 @@ window.onload = ()=>{ //after window loaded
 // *! runing number section 5
 
 
- 
+
+  
+
+
+
  
 
-    function runCounter(targetId, maxCount) {
-      var counter = document.getElementById(targetId);
-      var count = 0;
+    // function runCounter(targetId, maxCount) {
+    //   var counter = document.getElementById(targetId);
+    //   var count = 0;
   
-      function updateCounter() {
-        count++;
-        counter.textContent = count;
+    //   function updateCounter() {
+    //     count++;
+    //     counter.textContent = count;
   
-        if (count < maxCount) {
-          requestAnimationFrame(updateCounter);
-        }
-      }
+    //     if (count < maxCount) {
+    //       requestAnimationFrame(updateCounter);
+    //     }
+    //   }
   
-      requestAnimationFrame(updateCounter);
-    }
+    //   requestAnimationFrame(updateCounter);
+    // }
   
-    runCounter("counter", 500);
-    runCounter("countertwo", 300);
-    runCounter("counterThree", 60);
-    var scrollTimeout;
+    // runCounter("counter", 500);
+    // runCounter("countertwo", 300);
+    // runCounter("counterThree", 60);
+    // var scrollTimeout;
   
-    window.addEventListener("scroll", function() {
-      // If there is an existing scroll timeout, clear it
-      if (scrollTimeout) {
-        clearTimeout(scrollTimeout);
-      }
+    // window.addEventListener("scroll", function() {
+    //   // If there is an existing scroll timeout, clear it
+    //   if (scrollTimeout) {
+    //     clearTimeout(scrollTimeout);
+    //   }
   
-      // Set a new scroll timeout
-      scrollTimeout = setTimeout(function() {
-        // Update the counter after the scroll timeout
-        requestAnimationFrame(function() {
-          runCounter("counter", 500);
-          runCounter("counterTwo", 300);
-          runCounter("counterThree", 60);
-        });
-      }, 100);
-    });
+    //   // Set a new scroll timeout
+    //   scrollTimeout = setTimeout(function() {
+    //     // Update the counter after the scroll timeout
+    //     requestAnimationFrame(function() {
+    //       runCounter("counter", 500);
+    //       runCounter("counterTwo", 300);
+    //       runCounter("counterThree", 60);
+    //     });
+    //   }, 100);
+    // });
   
   // *! timer end 
 
   //*! card start
 
   var toggleButton = document.getElementById("toggle");
-  var cards = document.querySelectorAll(".card");
-  var containerOne = document.querySelector(".card-container-one");
+  // var cards = document.querySelectorAll(".card");
+  // var containerOne = document.querySelector(".card-container-one");
 
+  // toggleButton.addEventListener("click", function() {
+  //   // Loop through each card and set display to "none" for the first three
+  //   for (var i = 0; i < 3; i++) {
+  //     cards[i].style.display = cards[i].style.display === "none" ? "block" : "none";
+  //   }
+
+  //   // Toggle the second card container
+  //   containerOne.style.display = containerOne.style.display === "block" ? "none" : "block";
+  // });
+
+
+  var myButton = document.getElementById("myButton");
+  var myDiv = document.getElementById("myDivOne");
+  var myDiv = document.getElementById("myDivTwo");
+  var myDiv = document.getElementById("myDivThree");
+
+
+  var currentNumOne= 15;
+  var prevNumOne= 150;
+  var showCurrentOne= true;
+
+
+  var currentNumTwo= 35;
+  var prevNumTwo= 350;
+  var showCurrentTwo= true;
+
+
+
+
+  var currentNumThree = 55;
+  var prevNumThree = 550;
+  var showCurrentThree = true;
+  
   toggleButton.addEventListener("click", function() {
-    // Loop through each card and set display to "none" for the first three
-    for (var i = 0; i < 3; i++) {
-      cards[i].style.display = cards[i].style.display === "none" ? "block" : "none";
+    if (showCurrentOne) {
+      myDivOne.innerHTML = '$' + prevNumOne;
+      showCurrentOne = false;
+    } else {
+      myDivOne.innerHTML = '$' + currentNumOne;
+      showCurrentOne = true;
     }
 
-    // Toggle the second card container
-    containerOne.style.display = containerOne.style.display === "block" ? "none" : "block";
+    if (showCurrentTwo) {
+      myDivTwo.innerHTML = '$' + prevNumTwo;
+      showCurrentTwo = false;
+    } else {
+      myDivTwo.innerHTML = '$' + currentNumTwo;
+      showCurrentTwo = true;
+    }
+
+
+    if (showCurrentThree) {
+      myDivThree.innerHTML = '$' + prevNumThree;
+      showCurrentThree = false;
+    } else {
+      myDivThree.innerHTML = '$' + currentNumThree;
+      showCurrentThree = true;
+    }
+
+
+
   });
+  
+
+
+
+
+
+
+
 
 
 
@@ -213,3 +341,11 @@ myForm.addEventListener("submit", function(event) {
 });
 
 
+$('.single-item').slick();
+
+
+
+
+
+
+//

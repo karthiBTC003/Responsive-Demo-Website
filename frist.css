@@ -16,7 +16,9 @@ z-index: 5;
   
 }
 
-
+#navbar a{
+  text-decoration: none;
+}
 
 .container-two{
     /* background-image: url(/img/bg-intro.png); */
@@ -128,25 +130,26 @@ font-size: 1.4rem;
 /* *!section 2 start */
 
 .about-us-par-div{
-    margin-left: 43rem;
-    margin-top: 5rem;
+   text-align: center;
+   margin-top: 23px;
 }
 .about-us{
     font-size: 15px;
     color: blue;
-    margin-left: 3.5rem; 
+    /* margin-left: 3.5rem;  */
 }
 .our-goal{
     font-size: 33px;
     font-weight: 500;
-    margin-left: -1rem;
+    /* margin-left: -1rem; */
 }
 
 .make{
     font-weight: bold;
     font-size: 33px;
-    margin-left: -65px;
-    margin-top: -15px;
+    /* margin-left: -65px; */
+    /* margin-top: -15px; */
+    margin-top: 20px;
 }
 .light_mode-div{
      
@@ -294,21 +297,19 @@ font-size: 1.5rem;
 
 /*  ! section 3 start */
 .PORTFOLIO-div{
-     display: grid;
-    justify-content: center;
-    margin-top: 4rem;
+    text-align: center;
     font-size: 3rem;   
 }  
 
 .PORTFOLIO{
-        font-size: 1rem;
-    margin-left: 7rem;
-    color: blue;
-}
+  font-size: 1rem;
+  /* margin-left: 7rem; */
+  color: blue;
+  margin-top: 35px;}
 .see-our{
     font-weight: bold;
     font-size: 2rem;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }
 .amazing{
     color: transparent;
@@ -547,9 +548,8 @@ font-size: 1.5rem;
 
 /*  ! section 4 start */
 .SERVICES-box{
-  display: grid;
-  /* align-items: center; */
-  justify-content: center;
+text-align: center;
+padding: 2px;
 }
 
 
@@ -671,11 +671,8 @@ font-size: 2rem;
 /*  ! section 6 start */
 
 .pricing-div{
-  display: grid;
-  /* align-items: center; */
-  justify-content: center;
-  /* margin-top: 2rem; */
-  padding: 22px;
+ text-align: center;
+ padding: 10px;
 
 }
 .pricing{
@@ -683,7 +680,7 @@ font-size: 2rem;
 }
 .your-plan{
   font-size: 33px;
-  margin-left: -111px;
+  /* margin-left: -111px; */
   color: white;
 }
 
@@ -1166,6 +1163,7 @@ color: #fbc531;
   width: 45rem;
   height: 7rem;
   border-radius: 10px;
+  padding: 20px;
 }
 
 #subject{
@@ -1176,6 +1174,7 @@ color: #fbc531;
     width: 45rem;
     height: 3rem;
     border-radius: 10px;
+    padding: 20px;
 }
 
 #email{
@@ -1187,6 +1186,7 @@ color: #fbc531;
   width: 21rem;
   height: 3rem;
   border-radius: 10px;
+  padding: 20px;
 }
 
 #name{
@@ -1197,6 +1197,7 @@ color: #fbc531;
   width: 22rem;
   height: 3rem;
   border-radius: 10px;
+  padding: 20px;
 }
 
 .text-box:focus{

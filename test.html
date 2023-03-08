@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <style>
-    .navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background: none;
-        z-index: 999;
-      }
-      
-      .navbar ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: none;
-      }
-      
-      .navbar li {
-        float: left;
-      }
-      
-      .navbar li a {
-        display: block;
-        color: #333;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 18px;
-      }
-      
-      .navbar li a:hover {
-        background-color: #ddd;
-      }
-      </style>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@next/dist/css/splide.min.css">
+<style>/* Set a maximum width for the carousel container */
+  .splide {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Style the slide images */
+  .splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Hide the default pagination */
+  .splide__pagination {
+    display: none;
+  }
+  
+  /* Add custom styles for the navigation arrows */
+  .splide__arrow {
+    font-size: 2rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .splide__arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+  }
+  
+  .splide__arrow--prev {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .splide__arrow--next {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  </style>
+
+
 </head>
 <body>
-    <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide"><img src="/img/portfolio1.jpg"></li>
+        <li class="splide__slide"><img  src="/img/portfolio1.jpg"></li>
+        <li class="splide__slide"><img src="/img/portfolio1.jpg"></li>
+      </ul>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+  <script src="https://unpkg.com/@splidejs/splide@next"></script>
+  <script>
+ var splide = new Splide( '.splide' );
+splide.mount();
+
+
+  </script>
 </body>
 </html>
