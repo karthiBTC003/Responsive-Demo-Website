@@ -643,8 +643,8 @@ font-size: 2rem;
   align-items: center;
     justify-content: space-around;
     display: flex;
-    margin-top: 10rem;
-    margin-left: 15rem;
+    margin-top: 4rem;
+    margin-left: 10rem;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
     width: 65rem;
     height: 15rem;
@@ -657,13 +657,14 @@ font-size: 2rem;
 
 .box-footer{
   width: 71%;
-    display: flex;
-    justify-content: space-around;
-    font-size: 2rem;
-    margin-left: 15rem;
-    margin-top: -9rem;
-    color: #8a8a8a;
-    margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  margin-left: 13rem;
+  margin-top: -9rem;
+  gap: 67px;
+  color: #8a8a8a;
+  margin-bottom: 3rem;
  
 }
 /*  ! section 5 end */
@@ -767,7 +768,7 @@ input:checked + .slider:before {
 
 .card-container{
   display: flex;
-  margin-left: 12rem;
+  margin-left: 7rem;
   column-gap: 4rem;
 }
 

@@ -144,43 +144,43 @@ window.onload = ()=>{ //after window loaded
 
  
 
-    // function runCounter(targetId, maxCount) {
-    //   var counter = document.getElementById(targetId);
-    //   var count = 0;
+    function runCounter(targetId, maxCount) {
+      var counter = document.getElementById(targetId);
+      var count = 0;
   
-    //   function updateCounter() {
-    //     count++;
-    //     counter.textContent = count;
+      function updateCounter() {
+        count++;
+        counter.textContent = count;
   
-    //     if (count < maxCount) {
-    //       requestAnimationFrame(updateCounter);
-    //     }
-    //   }
+        if (count < maxCount) {
+          requestAnimationFrame(updateCounter);
+        }
+      }
   
-    //   requestAnimationFrame(updateCounter);
-    // }
+      requestAnimationFrame(updateCounter);
+    }
   
-    // runCounter("counter", 500);
-    // runCounter("countertwo", 300);
-    // runCounter("counterThree", 60);
-    // var scrollTimeout;
+    runCounter("counter", 500);
+    runCounter("countertwo", 300);
+    runCounter("counterThree", 60);
+    var scrollTimeout;
   
-    // window.addEventListener("scroll", function() {
-    //   // If there is an existing scroll timeout, clear it
-    //   if (scrollTimeout) {
-    //     clearTimeout(scrollTimeout);
-    //   }
+    window.addEventListener("scroll", function() {
+      // If there is an existing scroll timeout, clear it
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
   
-    //   // Set a new scroll timeout
-    //   scrollTimeout = setTimeout(function() {
-    //     // Update the counter after the scroll timeout
-    //     requestAnimationFrame(function() {
-    //       runCounter("counter", 500);
-    //       runCounter("counterTwo", 300);
-    //       runCounter("counterThree", 60);
-    //     });
-    //   }, 100);
-    // });
+      // Set a new scroll timeout
+      scrollTimeout = setTimeout(function() {
+        // Update the counter after the scroll timeout
+        requestAnimationFrame(function() {
+          runCounter("counter", 500);
+          runCounter("counterTwo", 300);
+          runCounter("counterThree", 60);
+        });
+      }, 100);
+    });
   
   // *! timer end 
 
